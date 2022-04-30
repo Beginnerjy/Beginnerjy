@@ -1,0 +1,17 @@
+if game.PlaceId == 2753915549
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/kav"))()
+local Window = Library.CreateLib("Blox Fruit", "Midnight")
+
+
+#Player
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player")
+    
+    PlayerSection:NewSlider("Walkspeed", "Change the walkspeed", 250, 16,function(v)
+        game.Players.LocalPlayer.Character.Humanoid.Walkspeed = v 
+end)
+
+
+      PlayerSection:NewSlider("Jumppower", "Change the jumppower", 250, 50,function(v)
+        game.Players.LocalPlayer.Character.Humanoid.Jumppower = v 
+end)
